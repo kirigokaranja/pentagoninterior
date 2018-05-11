@@ -49,7 +49,7 @@
 /* body */
 /* ================================================== */
 html{
-	background:#000000 !important;
+	background:#fff !important;
 }
 
 body {
@@ -60,7 +60,7 @@ body {
 	color: #ddd;
 	line-height: 1.8em;
 	padding: 0;
-	background:#606060;
+	background:#fff;
 }
 
 body.de_light{
@@ -1689,11 +1689,27 @@ h2 .small-border{
 }
 h2{
 }
+#clientproject h3 {
+	margin-top: 0;
+	font-size:23px;
+	letter-spacing:3px;
+	text-transform: inherit;
+	text-align: left;
+}
+#clientproject h3 span {
+	margin-top: 0;
+	font-size:23px;
+	letter-spacing:3px;
+	text-transform: inherit;
+	text-align: left;
+	color: #FAB702;
+}
 h3 {
 	margin-top: 0;
 	font-size:18px;
 	letter-spacing:3px;
 	text-transform:uppercase;
+	text-align: center;
 }
 h1.slogan_big {
 	font-weight: 300;

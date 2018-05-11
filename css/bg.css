@@ -18,7 +18,7 @@ background-size: 100% !important;
 .de_light #section-about-us-2{background:none;}
 #section-portfolio{background:white; width:101%;}
 .de_light #section-portfolio{background:#fff;}
-#section-team{background:#111;}
+#section-team{background:#fff;}
 .de_light #section-team{background:#f5f5f5;}
 #hide-content{position:absolute; width:100%; min-height:100%; z-index:100;display:none; background:rgba(0,0,0,.8);}
 

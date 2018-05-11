@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/new.css" type="text/css">
 
 
     <!-- custom background -->
@@ -73,14 +74,14 @@
                     <!-- mainmenu begin -->
                     <nav>
                         <ul id="mainmenu">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="#">About Us</a>
+                            <li><a href="index.php" class="active">Home</a></li>
+                            <li><a href="about.php">About Us</a>
                                 <ul>
-                                    <li><a href="#">Our History</a></li>
-                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="history.php">Our History</a></li>
+                                    <li><a href="services.php">Our Services</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Clientele</a></li>
+                            <li><a href="clientele.php">Clientele</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Portfolio</a></li>
                             <li><a href="#">Contact</a></li>
@@ -102,10 +103,17 @@
     <!-- content begin -->
     <div id="content" class="no-bottom no-top">
         <div id="content" class="no-bottom no-top" style="background-image: url('images/wide3.jpg');width: 100%; height: 100vh;">
+            <div id="homepagecontent">
+                <br><br><br><br><br><br>
+                <h3>our expertise for</h3>
+                <h2>interior design</h2><br>
+                <a href="#">Our Portfolio</a>
+            </div><br><br>
+            <a href="#section-about" id="homepageimga"><img src="images/ui.totop.png" id="homepagecontentimg"></a>
 
         </div>
         <!-- section begin -->
-        <section id="section-about">
+        <section id="section-about" class="section-about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
@@ -344,8 +352,8 @@
                     <div class="widget widget_recent_post">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Company History</a></li>
-                            <li><a href="#">Our services</a></li>
+                            <li><a href="history.php">Company History</a></li>
+                            <li><a href="services.php">Our services</a></li>
                             <li><a href="#">Clientele</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Portfolio</a></li>

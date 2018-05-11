@@ -1,0 +1,68 @@
+/* homepage start */
+#homepagecontent{
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-left: 50px;
+    padding-left: 50px;
+    text-align: left;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+#homepagecontent h3{
+    letter-spacing: 4px;
+    font-size: 20px;
+    visibility: visible;
+    color: white;
+    text-align: left;
+}
+#homepagecontent h2{
+    line-height: 17px;
+    letter-spacing: 7px;
+    font-size: 75px;
+    font-weight: 300;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#homepagecontent a{
+    cursor: pointer;
+    background: transparent;
+    border: solid 2px #fff;
+    padding: 10px 30px 10px 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: normal;
+}
+#homepagecontent a:hover{
+    color: #FAB702;
+    background-color: white;
+    border: solid 2px #fff;
+}
+#homepagecontentimg{
+    margin-left: 50%;
+    margin-top: 70px;
+
+}
+#homepagecontentimg:hover{
+    border: solid 1px #fff;
+    opacity: 0.6;
+}
+.widget_recent_post li a:hover{
+    color: #FAB702;
+}
+/* homepage end */
+
+/*about starts */
+#aboutcontent{
+margin-top: 10%;
+}
+
+/*about ends */
+
+
+
+.col-md-4{
+    padding-bottom: 60px;
+}
