@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/newstyle.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/logoimage_grid.css" type="text/css">
-
+    <link rel="stylesheet" href="css/social_media.css" type="text/css">
 
     <!-- custom background -->
     <link rel="stylesheet" href="css/bg.css" type="text/css">
@@ -84,9 +84,10 @@
                                 </ul>
                             </li>
                             <li><a href="clientele.php">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+
                         </ul>
                     </nav>
 
@@ -144,7 +145,7 @@
 
                             ?>
                             <li>
-                                <form method="post" action="try.php">
+                                <form method="post" action="clientproject.php">
                                     <img src="<?php echo $img; ?>" style="height=180px; width=320px;"  alt="<?php echo $img; ?>" name="<?php echo $img; ?>">
                                <input type="hidden" name="clientid" value="<?php echo $clentid; ?>" title="">
                                     <figcaption><p><button id="button" type="submit" ></button></p></figcaption>
@@ -187,10 +188,14 @@
                             <ul>
                                 <li><a href="history.php">Company History</a></li>
                                 <li><a href="services.php">Our services</a></li>
-                                <li><a href="#">Clientele</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="admin/login.php">Dashboard</a></li>
+                                <li><a href="clientele.php">Clientele</a></li>
+                                <li><a href="gallery.php">Gallery</a></li>
+                                <li><a href="portfolio.php">Portfolio</a></li>
                             </ul>
+                            <a href="https://www.facebook.com/pages/Pentagon-Interior-LTD/662952133861650" class="fa fa-facebook"></a>
+                            <a href="https://www.google.com/search?q=pentagoninterior&oq=pentagoninterior&aqs=chrome..69i57j69i60l4j0.4294j0j7&sourceid=chrome&ie=UTF-8" class="fa fa-google"></a>
+                            <a href="mailto:esales@pentagoninterior.com" class="fa fa-envelope"></a>
                         </div>
                     </div>
 

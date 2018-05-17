@@ -33,7 +33,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/newstyle.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-
+    <link rel="stylesheet" href="css/social_media.css" type="text/css">
+    <link rel="stylesheet" href="css/team.css" type="text/css">
 
     <!-- custom background -->
     <link rel="stylesheet" href="css/bg.css" type="text/css">
@@ -80,9 +81,10 @@
                                 </ul>
                             </li>
                             <li><a href="clientele.php">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+
                         </ul>
                     </nav>
 
@@ -137,108 +139,62 @@
        </section>
 
 
-        <section id="section-team" >
-            <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="margin-top: -7%; visibility: visible">
-                <h1>Our Team</h1>
+        <section id="section-team" style="height: 135vh;margin-top: -7%;" >
+         <h1>Our Team</h1>
                 <div class="separator"><span><i class="fa fa-circle"></i></span></div>
                 <div class="spacer-single"></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 container-4">
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="images/team/teamm1.jpg" class="img-responsive" alt="" style="height: 471px" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>John Smith</h3>
-                                <p class="lead">Project Manager</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
 
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="images/team/teamm2.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>Michael Dennis</h3>
-                                <p class="lead">Creative Director</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
-
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="images/team/teamf2.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>Sarah Michelle</h3>
-                                <p class="lead">Creative Staff</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <!-- team member -->
-                        <div class="de-team-list">
-                            <div class="team-pic">
-                                <img src="images/team/teamf1.jpg" class="img-responsive" alt="" />
-                            </div>
-                            <div class="team-desc col-md-12">
-                                <h3>Katty Wilson</h3>
-                                <p class="lead">Creative Staff</p>
-                                <div class="small-border"></div>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur.</p>
-                                <div class="social">
-                                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#"><i class="fa fa-skype fa-lg"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- team close -->
-
-                        <div class="clearfix"></div>
-
+            <div class="teamrow">
+                <div class="teamcolumn">
+                    <div class="teamcard">
+                        <img src="images/team/teamm1.jpg" class="img-responsive" alt="" />
+                    </div><br>
+                    <div class="teamcontainer">
+                        <h3>Johny Smith</h3>
+                        <p class="jobtitle">Project Manager</p>
+                        <div class="small-border"></div>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="teamcolumn">
+                    <div class="teamcard">
+                        <img src="images/team/teamf2.jpg" class="img-responsive" alt="" />
+                    </div><br>
+                    <div class="teamcontainer">
+                        <h3>Sarah Michele</h3>
+                        <p class="jobtitle">Creative Staff</p>
+                        <div class="small-border"></div>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="teamcolumn">
+                    <div class="teamcard">
+                        <img src="images/team/teamm2.jpg" class="img-responsive" alt="" />
+                    </div><br>
+                    <div class="teamcontainer">
+                        <h3>Michael Dennis</h3>
+                        <p class="jobtitle">Director</p>
+                        <div class="small-border"></div>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur.</p>
+                    </div>
+                </div>
+                <div class="teamcolumn">
+                    <div class="teamcard">
+                        <img src="images/team/teamf1.jpg" class="img-responsive" alt="" />
+                    </div><br>
+                    <div class="teamcontainer">
+                        <h3>Katty Wilson</h3>
+                        <p class="jobtitle">Creative Staff</p>
+                        <div class="small-border"></div>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur.</p>
                     </div>
                 </div>
             </div>
         </section>
-
 
 
         <!-- footer begin -->
@@ -259,10 +215,14 @@
                         <ul>
                             <li><a href="history.php">Company History</a></li>
                             <li><a href="services.php">Our services</a></li>
-                            <li><a href="#">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="admin/login.php">Dashboard</a></li>
+                            <li><a href="clientele.php">Clientele</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
                         </ul>
+                        <a href="https://www.facebook.com/pages/Pentagon-Interior-LTD/662952133861650" class="fa fa-facebook"></a>
+                        <a href="https://www.google.com/search?q=pentagoninterior&oq=pentagoninterior&aqs=chrome..69i57j69i60l4j0.4294j0j7&sourceid=chrome&ie=UTF-8" class="fa fa-google"></a>
+                        <a href="mailto:esales@pentagoninterior.com" class="fa fa-envelope"></a>
                     </div>
                 </div>
 

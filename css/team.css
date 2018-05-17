@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.teamrow{
+    margin-left: 10%;
+}
+
+.teamcolumn {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 18px;
+}
+
+@media screen and (max-width: 650px) {
+    .teamcolumn {
+        width: 100%;
+        display: block;
+    }
+}
+
+.teamcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.teamcard img{
+    height: 300px;
+    width: 230px;
+}
+
+.teamcontainer {
+    padding: 0 16px;
+    color: antiquewhite;
+}
+
+.teamcontainer::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.jobtitle{
+    text-align: center;
+}

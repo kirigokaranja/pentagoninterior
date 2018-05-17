@@ -39,8 +39,8 @@ $cid = $_POST['clientid'];
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/new.css" type="text/css">
-
-
+    <link rel="stylesheet" href="css/slideshow.css" type="text/css">
+    <link rel="stylesheet" href="css/social_media.css" type="text/css">
     <!-- custom background -->
     <link rel="stylesheet" href="css/bg.css" type="text/css">
 
@@ -88,9 +88,9 @@ $cid = $_POST['clientid'];
                                 </ul>
                             </li>
                             <li><a href="clientele.php">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </nav>
 
@@ -151,31 +151,40 @@ $cid = $_POST['clientid'];
                 <div class="row">
                     <div class="col-lg-6">
                         <div >
-                            <div id="wowslider-container1">
-                                <div class="ws_images"><ul>
-                                        <?php
+                            <div class="slideshow-container">
+                                <?php
 
-                                        $sql = "SELECT * FROM `clientimage`";
-                                        $result = $conn->query($sql);
-
-
-                                        $file = "admin/client/";
-                                        while($row = mysqli_fetch_array($result)) {
+                                $sql = "SELECT * FROM `clientimage` LIMIT 3;";
+                                $result = $conn->query($sql);
 
 
-                                            $img = $file . $row['image_name'];
+                                $file = "admin/client/";
+                                while($row = mysqli_fetch_array($result)) {
 
-                                            ?>
-                                            <li><img src="<?php echo $img; ?>" alt="" title="" /></li>  <?php
-                                        }
-                                        ?>
-                                    </ul></div>
-                                <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
-                                <div class="ws_shadow"></div>
+                                    $id = $row['client_id'];
+                                    $img = $file . $row['image_name'];
+
+
+                                    ?>
+                                    <div class="mySlides fade">
+                                        <img src="<?php echo $img; ?>" style="width:324px; height: 220px;">
+                                    </div>
+                                    <?php
+                                } ?>
+
                             </div>
+                            <br>
 
-                            <!-- End WOWSlider.com BODY section -->
+                            <div style="text-align:center;" >
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <!-- logo carousel section close -->
     </div>
@@ -197,10 +206,13 @@ $cid = $_POST['clientid'];
                         <ul>
                             <li><a href="history.php">Company History</a></li>
                             <li><a href="services.php">Our services</a></li>
-                            <li><a href="#">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="clientele.php">Clientele</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
                         </ul>
+                        <a href="https://www.facebook.com/pages/Pentagon-Interior-LTD/662952133861650" class="fa fa-facebook"></a>
+                        <a href="https://www.google.com/search?q=pentagoninterior&oq=pentagoninterior&aqs=chrome..69i57j69i60l4j0.4294j0j7&sourceid=chrome&ie=UTF-8" class="fa fa-google"></a>
+                        <a href="mailto:esales@pentagoninterior.com" class="fa fa-envelope"></a>
                     </div>
                 </div>
 
@@ -245,7 +257,7 @@ $cid = $_POST['clientid'];
 <script src="js/designesia.js"></script>
 <script type="text/javascript" src="engine1/wowslider.js"></script>
 <script type="text/javascript" src="engine1/script.js"></script>
-
+<script type="text/javascript" src="js/slideshow.js"></script>
 </body>
 
 </html>

@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/newstyle.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/new.css" type="text/css">
+    <link rel="stylesheet" href="css/social_media.css" type="text/css">
 
 
     <!-- custom background -->
@@ -81,9 +82,10 @@
                                 </ul>
                             </li>
                             <li><a href="clientele.php">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
+                            <li><a href="gallery.php">Gallery</a></li>
                             <li><a href="#">Portfolio</a></li>
                             <li><a href="#">Contact</a></li>
+
                         </ul>
                     </nav>
 
@@ -115,48 +117,56 @@
 
                     <div class="col-md-4 wow fadeInLeft">
                         <h3><span class="id-color">Residential</span> Design</h3>
-                        Modern home layout of the master bedroom layout.
+
                         <div class="spacer-single"></div>
-                        <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                        <a class="image-popup-no-margins" href="images/services1.jpg" title="Modern home layout of the master bedroom layout.">
                             <img src="images/services1.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInUp" data-wow-delay=".2s">
                         <h3><span class="id-color">Office</span> Design</h3>
-                        Office space layout with a modern twist and aired rooms.
+
                         <div class="spacer-single"></div>
+                        <a class="image-popup-no-margins" href="images/gallery7.jpg" title="Office space layout with a modern twist and aired rooms.">
                         <img src="images/gallery7.jpg" class="img-responsive" alt="">
+                        </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInRight">
                         <h3><span class="id-color">Commercial</span> Design</h3>
-                        shop layout with a showcase of the shop's merchandise.
+
                         <div class="spacer-single"></div>
+                        <a class="image-popup-no-margins" href="images/gallery4.jpg" title=" shop layout with a showcase of the shop's merchandise.">
                         <img src="images/gallery4.jpg" class="img-responsive" alt="">
+                        </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInLeft">
-                        <h3><span class="id-color">Residential</span> Design</h3>
-                        Modern home layout of the master bedroom layout.
+                        <h3><span class="id-color">WallHanging</span> Design</h3>
+
                         <div class="spacer-single"></div>
-                        <a class="image-popup-no-margins" href="images/bg-6.jpg">
-                            <img src="images/services1.jpg" class="img-responsive" alt="">
+                        <a class="image-popup-no-margins" href="images/wallhanging.jpg" title="Modern home layout of the master bedroom layout.">
+                            <img src="images/wallhanging.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInUp" data-wow-delay=".2s">
-                        <h3><span class="id-color">Office</span> Design</h3>
-                        Office space layout with a modern twist and aired rooms.
+                        <h3><span class="id-color">RoomLayout</span> Design</h3>
+
                         <div class="spacer-single"></div>
-                        <img src="images/gallery7.jpg" class="img-responsive" alt="">
+                        <a class="image-popup-no-margins" href="images/neustadt-9.jpg" title="Office space layout with a modern twist and aired rooms.">
+                        <img src="images/neustadt-9.jpg" class="img-responsive" alt="">
+                        </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInRight">
-                        <h3><span class="id-color">Commercial</span> Design</h3>
-                        shop layout with a showcase of the shop's merchandise.
+                        <h3><span class="id-color">LivingRoom</span> Design</h3>
+
                         <div class="spacer-single"></div>
-                        <img src="images/gallery4.jpg" class="img-responsive" alt="">
+                        <a class="image-popup-no-margins" href="images/decorist.jpg" title=" shop layout with a showcase of the shop's merchandise.">
+                        <img src="images/decorist.jpg" class="img-responsive" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -184,10 +194,14 @@
                             <ul>
                                 <li><a href="history.php">Company History</a></li>
                                 <li><a href="services.php">Our services</a></li>
-                                <li><a href="#">Clientele</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="admin/login.php">Dashboard</a></li>
+                                <li><a href="clientele.php">Clientele</a></li>
+                                <li><a href="gallery.php">Gallery</a></li>
+                                <li><a href="portfolio.php">Portfolio</a></li>
                             </ul>
+                            <a href="https://www.facebook.com/pages/Pentagon-Interior-LTD/662952133861650" class="fa fa-facebook"></a>
+                            <a href="https://www.google.com/search?q=pentagoninterior&oq=pentagoninterior&aqs=chrome..69i57j69i60l4j0.4294j0j7&sourceid=chrome&ie=UTF-8" class="fa fa-google"></a>
+                            <a href="mailto:esales@pentagoninterior.com" class="fa fa-envelope"></a>
                         </div>
                     </div>
 
