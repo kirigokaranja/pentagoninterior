@@ -70,18 +70,18 @@ if ($res && $row = $res->fetch_assoc()) {
 <?php
     }else{
         ?>
-<!--        <script>-->
-<!--            swal({-->
-<!--                title: "Error",-->
-<!--                text: "An error ocurred!",-->
-<!--                type: "error",-->
-<!--                timer: 1500,-->
-<!--                showConfirmButton: false-->
-<!--            });-->
-<!--            setTimeout(function () {-->
-<!--                location.href = "client.php"-->
-<!--            }, 1000);-->
-<!--        </script>-->
+        <script>
+            swal({
+                title: "Error",
+                text: "An error ocurred!",
+                type: "error",
+                timer: 1500,
+                showConfirmButton: false
+            });
+            setTimeout(function () {
+                location.href = "client.php"
+            }, 1000);
+        </script>
         <?php
     }
 

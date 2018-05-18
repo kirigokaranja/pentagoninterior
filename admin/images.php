@@ -1,38 +1,147 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="../css/dropzone.css">
-    <link rel="stylesheet" href="../css/upload.css">
+    <title>Pentagon Interior | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
 
 
-    <script src="../js/dropzone.js"></script>
-    <script src="../js/upload.js"></script>
-    <!-- script files -->
-</head>
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <![endif]-->
 
-<body>
 
-                <form action="addimages.php" method="post" enctype="multipart/form-data" class="dropzone" id="my-dropzone"
-                      style="min-height: 350px; border: dotted;">
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/jpreloader.css" type="text/css">
+    <link rel="stylesheet" href="../css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../css/plugin.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <link rel="stylesheet" href="../css/new.css" type="text/css">
+    <link rel="stylesheet" href="../css/sidebar.css" type="text/css">
 
-                    <div class="fallback" style="position: relative">
-                        <input name="file" type="file" multiple />
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="../css/bg.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="../css/color.css" type="text/css" id="colors">
+
+    <!-- load fonts -->
+    <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/elegant_font/HTML_CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/et-line-font/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/login.css">
+
+<body id="homepage">
+
+<div id="wrapper">
+
+    <!-- header begin -->
+    <header>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- logo begin -->
+                    <div id="logo">
+                        <a href="index.php">
+                            <img class="logo" src="../images/icon.PNG" alt="">
+                        </a>
                     </div>
+                    <!-- logo close -->
 
-                </form>
+                    <!-- small button begin -->
+                    <span id="menu-btn"></span>
+                    <!-- small button close -->
 
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <button class="btn btn-large" id="submit-all">Upload Photos</button>
+                    <!-- mainmenu begin -->
+                    <nav>
+                        <ul id="mainmenu">
+                            <li><a href="index.php" class="active">Dashboard</a></li>
+                            <li><a href="#">Logout</a></li>
+                            <li><a ><span style="font-size:30px;cursor: pointer" onclick="openNav()">&#9776;</span></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <!-- mainmenu close -->
+
             </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <button class="dropdown-btn">Gallery
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="images.php">Add Image</a>
+                <a href="#">Manage Images</a>
+            </div>
+            <a href="#">Clients</a>
+            <button class="dropdown-btn" >Clientelle
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="client.php" class="active">Add Client</a>
+                <a href="#">Manage Client</a>
+            </div>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+</div>
+<div class="containerform" style="margin-top: -2%;">
+    <h3>Add Image to Gallery</h3><br>
+    <form method="post" enctype="multipart/form-data" action="addgalleryimages.php">
+
+        <label class="password">
+            <input type="file" name="Upload" ><br>
+        </label>
+        <label class="password">
+            <span class="label-text">Image Description</span>
+            <input type="text" name="description"required/>
+        </label>
+        <div class="text-center">
+            <button type="submit" class="submit">SAVE CHANGES</button>
+        </div>
+    </form>
+
+
+
+
+</div>
+
+
+<!-- Javascript Files
+================================================== -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/map.js"></script>
+<script src="../js/jpreLoader.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.isotope.min.js"></script>
+<script src="../js/easing.js"></script>
+<script src="../js/jquery.flexslider-min.js"></script>
+<script src="../js/jquery.scrollto.js"></script>
+<script src="../js/owl.carousel.js"></script>
+<script src="../js/jquery.countTo.js"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/video.resize.js"></script>
+<script src="../js/validation.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/enquire.min.js"></script>
+<script src="../js/designesia.js"></script>
+<script src="../js/sidebar.js"></script>
 
 </body>
 </html>

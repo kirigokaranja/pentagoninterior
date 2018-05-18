@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/index.css" type="text/css">
     <link rel="stylesheet" href="../css/new.css" type="text/css">
+    <link rel="stylesheet" href="../css/sidebar.css" type="text/css">
 
 
     <!-- custom background -->
@@ -67,16 +68,8 @@
                     <nav>
                         <ul id="mainmenu">
                             <li><a href="index.php" class="active">Dashboard</a></li>
-                            <li><a href="">Client</a>
-                                <ul>
-                                    <li><a href="client.php">Project Info</a></li>
-                                    <li><a href="images.php">Slideshow Info</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Logout</a></li>
+                            <li><a ><span style="font-size:30px;cursor: pointer" onclick="openNav()">&#9776;</span></a></li>
                         </ul>
                     </nav>
 
@@ -84,6 +77,26 @@
                 <!-- mainmenu close -->
 
             </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <button class="dropdown-btn">Gallery
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="images.php">Add Image</a>
+                <a href="#">Manage Images</a>
+            </div>
+            <a href="#">Clients</a>
+            <button class="dropdown-btn" >Clientelle
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="client.php" class="active">Add Client</a>
+                <a href="#">Manage Client</a>
+            </div>
+            <a href="#">Contact</a>
         </div>
     </header>
 </div>
@@ -145,6 +158,7 @@
 <script src="../js/jquery.magnific-popup.min.js"></script>
 <script src="../js/enquire.min.js"></script>
 <script src="../js/designesia.js"></script>
+<script src="../js/sidebar.js"></script>
 <script type="text/javascript">
 
     function preview_image(event)
