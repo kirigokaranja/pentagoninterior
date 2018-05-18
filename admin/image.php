@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Pentagon Interior | Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-    <![endif]-->
-
-
-    <!-- CSS Files
-    ================================================== -->
+    <link rel="stylesheet" href="../css/dropzone.css">
+    <link rel="stylesheet" href="../css/upload.css">
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="../css/jpreloader.css" type="text/css">
     <link rel="stylesheet" href="../css/animate.css" type="text/css">
@@ -38,7 +35,12 @@
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="../fonts/elegant_font/HTML_CSS/style.css" type="text/css">
     <link rel="stylesheet" href="../fonts/et-line-font/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/login.css">
+
+
+    <script src="../js/dropzone.js"></script>
+    <script src="../js/upload.js"></script>
+    <!-- script files -->
+</head>
 
 <body id="homepage">
 
@@ -66,11 +68,11 @@
                     <!-- mainmenu begin -->
                     <nav>
                         <ul id="mainmenu">
-                            <li><a href="index.php" class="active">Dashboard</a></li>
-                            <li><a href="">Client</a>
+                            <li><a href="index.php" >Dashboard</a></li>
+                            <li><a href="" class="active">Client</a>
                                 <ul>
                                     <li><a href="client.php">Project Info</a></li>
-                                    <li><a href="images.php">Slideshow Info</a></li>
+                                    <li><a href="images.php" class="active">Slideshow Info</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Clientele</a></li>
@@ -86,42 +88,35 @@
             </div>
         </div>
     </header>
+</div> <?php
+session_start();
+require('connection.php');global $conn;
+$userid = $_SESSION['uid'];
+$sq = "SELECT * FROM client WHERE client_id = '$userid'";
+$res = $conn->query($sq) or trigger_error($conn->error . "[$sq]");
+if ($res && $row = $res->fetch_assoc()) {
+$username = $row['client_name'];
+?>
+<div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="margin-top: 8%">
+    <h1>Slideshow Image Upload For <span style="color: #FAB702"><?php echo $username; }?></span></h1>
+    <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+    <div class="spacer-single"></div>
+
 </div>
-<div class="containerform">
-    <img src='' width=200px; height=100px; id="output_image" class='image' style=" width:100px; margin-left: 35%; background-color: white" alt="Logo Image">
-    <form method="post" action="addclient.php" enctype="multipart/form-data">
+<div style="width: 45%;margin-left: 28%;margin-top: 15%">
 
-        <label class="password">
-            <input type="file" name="myimage"  onchange="preview_image(event)"><br>
-        </label>
-        <label class="password">
-            <span class="label-text">Client Name</span>
-            <input type="text" name="clientname"required/>
-        </label>
-        <label class="password">
-            <span class="label-text">Year</span>
-            <input type="text" name="year" required/>
-        </label>
-        <label class="password">
-            <span class="label-text">Challenge</span>
-            <textarea  name="challenge" required style="background: transparent;border: none"></textarea>
-        </label>
-        <label class="password">
-            <span class="label-text">Solution</span>
-            <textarea  name="solution" required style="background: transparent;border: none"></textarea>
-        </label>
-        <label class="password">
-            <span class="label-text">Outcome</span>
-            <textarea  name="outcome" required style="background: transparent;border: none"></textarea>
-        </label>
+    <form action="addimages.php" method="post" enctype="multipart/form-data" class="dropzone" id="my-dropzone"
+          style="min-height: 350px; border: dotted 2px black; color: black">
+<br>
+        <div class="fallback" style="position: relative;color: black">
+            <input name="file" type="file" multiple />
 
-        <div class="text-center">
-            <button type="submit" class="submit">SAVE CHANGES</button>
         </div>
+        <input type="hidden" name="uid" value="<?php echo $userid;?>">
     </form>
-
-
-
+    <div class="col-md-8 col-md-offset-2 text-center">
+        <button class="btn btn-large" id="submit-all">Upload Photos</button>
+    </div>
 
 </div>
 
@@ -145,18 +140,6 @@
 <script src="../js/jquery.magnific-popup.min.js"></script>
 <script src="../js/enquire.min.js"></script>
 <script src="../js/designesia.js"></script>
-<script type="text/javascript">
 
-    function preview_image(event)
-    {
-        var reader = new FileReader();
-        reader.onload = function()
-        {
-            var output = document.getElementById('output_image');
-            output.src = reader.result;
-        }
-        reader.readAsDataURL(event.target.files[0]);
-    }
-</script>
 </body>
 </html>

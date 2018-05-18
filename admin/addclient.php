@@ -13,7 +13,7 @@
  * Date: 03/05/2018
  * Time: 19:48
  */
-
+session_start();
 require('connection.php');
 $upload_images = $_FILES['myimage']['name'];
 
@@ -49,7 +49,12 @@ if ($res && $row = $res->fetch_assoc()) {
     $result2 = $conn->query($sql2);
 
     if ($result1 && $result2){
+        $uid = $userid;
+        $_SESSION['uid'] = $uid;
         ?>
+<!--    <form method="post" action="image.php">-->
+<!--        <input type="hidden" name="uid" value="--><?php //echo $userid;?><!--">-->
+<!--    </form>-->
         <script>
             swal({
                 title: "Success",
@@ -59,24 +64,24 @@ if ($res && $row = $res->fetch_assoc()) {
                 showConfirmButton: false
             });
             setTimeout(function () {
-                location.href = "client.php"
+                location.href = "image.php"
             }, 1000);
         </script>
 <?php
     }else{
         ?>
-        <script>
-            swal({
-                title: "Error",
-                text: "An error ocurred!",
-                type: "error",
-                timer: 1500,
-                showConfirmButton: false
-            });
-            setTimeout(function () {
-                location.href = "client.php"
-            }, 1000);
-        </script>
+<!--        <script>-->
+<!--            swal({-->
+<!--                title: "Error",-->
+<!--                text: "An error ocurred!",-->
+<!--                type: "error",-->
+<!--                timer: 1500,-->
+<!--                showConfirmButton: false-->
+<!--            });-->
+<!--            setTimeout(function () {-->
+<!--                location.href = "client.php"-->
+<!--            }, 1000);-->
+<!--        </script>-->
         <?php
     }
 

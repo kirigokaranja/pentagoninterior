@@ -268,10 +268,10 @@ if(isset($_POST['Send'])){
                                         <div class="">
                                             <h3>ADD NEW CLIENTELLE</h3>
                                             <br>
-                                            <form method="post" action="addclient.php" enctype="multipart/form-data">
+                                            <form method="post" action="addclient.php" enctype="multipart/form-data" id="clientform">
 
                                                 <label class="password">
-            <input type="file" name="myimage"  onchange="preview_image(event)"><br>
+            <input multiple type="file" name="myimage"  onchange="preview_image(event)"><br>
         </label>
                                                 <label class="password">
             <span class="label-text">Client Name</span>
@@ -294,8 +294,8 @@ if(isset($_POST['Send'])){
             <textarea class="texts"  name="outcome" required ></textarea>
         </label>
 
-                                                <div class="text-center">
-                                                    <button type="submit" class="submit">SAVE CHANGES</button>
+                                                <div class="text-center" >
+<br><br>
                                                 </div>
                                             </form>
 
@@ -321,7 +321,7 @@ if(isset($_POST['Send'])){
 
                                                 <div class="col-md-8 col-md-offset-2 text-center">
                                                     <br>
-                                                    <button class="btn btn-large" id="submit-all">Upload Photos</button>
+                                                    <button class="btn btn-large" id="submit-all" onclick="submitForms()">Add Client and Slideshow</button>
                                                     <br>
                                                     <br>
                                                     <br>
@@ -375,7 +375,12 @@ if(isset($_POST['Send'])){
 
             </style>
 
-
+<script>
+    submitForms = function(){
+        document.getElementById("clientform").submit();
+        document.getElementById("my-dropzone").submit();
+    }
+</script>
 
 
 

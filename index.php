@@ -356,6 +356,7 @@
                             <li><a href="history.php">Company History</a></li>
                             <li><a href="services.php">Our services</a></li>
                             <li><a href="clientele.php">Clientele</a></li>
+                            <li><a href="admin/login.php">Dashboard</a> </li>
                             <li><a href="gallery.php">Gallery</a></li>
                             <li><a href="portfolio.php">Portfolio</a></li>
                         </ul>

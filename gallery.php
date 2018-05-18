@@ -238,7 +238,7 @@
                                 </span>
                         </a>
 
-                                    <img src='admin/uploads/".$ImageName."' alt='' />
+                                    <img src='admin/Uploads/".$ImageName."' alt='' style='height: 334px; width: 254px;' />
                                 </div>
                             </div>";
 

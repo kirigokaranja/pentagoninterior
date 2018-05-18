@@ -151,27 +151,26 @@ $cid = $_POST['clientid'];
                 <div class="row">
                     <div class="col-lg-6">
                         <div >
-                            <div class="slideshow-container">
+
                                 <?php
 
-                                $sql = "SELECT * FROM `clientimage` LIMIT 3;";
+                                $sql = "SELECT * FROM `clientimage` WHERE client_id = '$cid' LIMIT 3;";
                                 $result = $conn->query($sql);
 
 
                                 $file = "admin/client/";
                                 while($row = mysqli_fetch_array($result)) {
-
-                                    $id = $row['client_id'];
-                                    $img = $file . $row['image_name'];
-
+                                $id = $row['client_id'];
+                                $img = $file . $row['image_name'];
 
                                     ?>
+                            <div class="slideshow-container">
                                     <div class="mySlides fade">
                                         <img src="<?php echo $img; ?>" style="width:324px; height: 220px;">
                                     </div>
+
                                     <?php
                                 } ?>
-
                             </div>
                             <br>
 
@@ -180,6 +179,7 @@ $cid = $_POST['clientid'];
                                 <span class="dot"></span>
                                 <span class="dot"></span>
                             </div>
+
                         </div>
                     </div>
                 </div>
