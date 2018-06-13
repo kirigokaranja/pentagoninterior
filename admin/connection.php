@@ -6,10 +6,10 @@
  * Time: 19:35
  */
 
-$Host_Name = 'localhost';
-$Database_User = 'root';
-$Password = '';
-$Database_Name = 'pentagoninterior';
+$Host_Name = 'sql2.freemysqlhosting.net';
+$Database_User = 'sql2242570';
+$Password = 'zT5%rA9!';
+$Database_Name = 'sql2242570';
 
 $conn = mysqli_connect($Host_Name,$Database_User,$Password,$Database_Name);
 
