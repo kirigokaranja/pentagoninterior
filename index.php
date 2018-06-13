@@ -107,7 +107,7 @@
             <div id="homepagecontent">
                 <br><br><br><br><br><br>
                 <h3>our expertise for</h3>
-                <h2>interior</h2> <h2>design</h2><br>
+                <h2>interior </h2> <h2>design</h2><br>
                 <a href="portfolio.php">Our Portfolio</a>
             </div><br><br>
             <a href="#section-about" id="homepageimga"><img src="images/ui.totop.png" id="homepagecontentimg"></a>
