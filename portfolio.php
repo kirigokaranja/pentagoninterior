@@ -16,19 +16,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="">
     <style media="screen">
-      #cust-menu ul{
-      text-decoration: none;
-      }
-      #cust-menu li{
-        display: inline;
-
-        padding: 3px;
-      }
-      #cust-menu li a{
-        color: #ccc;
-        font-size: 18px;
-        text-transform: uppercase;
-      }
+        #cust-menu ul{
+            text-decoration: none;
+        }
+        #cust-menu li{
+            display: inline;
+            padding: 3px;
+        }
+        #cust-menu li a{
+            color: #ccc;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
         .porfolio{
             text-align: center;
             padding-top: 40px;
@@ -116,203 +115,205 @@
         </div>
     </header>
     <!-- header close -->
-        <!-- content begin -->
-<!--    <div id="content" class="no-bottom no-top">-->
-<!--        <div id="content" class="no-bottom no-top" style="background-image: url('images/wide3.jpg');width: 100%; height: 100vh;">-->
-<!--            <div id="homepagecontent">-->
-<!--                <br><br><br><br><br><br>-->
-<!--                <h3>our expertise for</h3>-->
-<!--                <h2>interior design</h2><br>-->
-<!--                <a href="#">Our Portfolio</a>-->
-<!--            </div><br><br>-->
-<!--            <a href="#section-about" id="homepageimga"><img src="images/ui.totop.png" id="homepagecontentimg"></a>-->
-<!---->
-<!--        </div>-->
-        <!-- section begin -->
+    <!-- content begin -->
+    <!--    <div id="content" class="no-bottom no-top">-->
+    <!--        <div id="content" class="no-bottom no-top" style="background-image: url('images/wide3.jpg');width: 100%; height: 100vh;">-->
+    <!--            <div id="homepagecontent">-->
+    <!--                <br><br><br><br><br><br>-->
+    <!--                <h3>our expertise for</h3>-->
+    <!--                <h2>interior design</h2><br>-->
+    <!--                <a href="#">Our Portfolio</a>-->
+    <!--            </div><br><br>-->
+    <!--            <a href="#section-about" id="homepageimga"><img src="images/ui.totop.png" id="homepagecontentimg"></a>-->
+    <!---->
+    <!--        </div>-->
+    <!-- section begin -->
     <br>
-        <section id="section-about" class="section-about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
-                        <h1>Our Portfolio in design</h1>
+    <section id="section-about" class="section-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+                    <h1>Our Portfolio in design</h1>
 
                     <div class="separator"><span><i class="fa fa-circle"></i></span></div>
                     <div class="row">
-                      <div class="col-md-12">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <div class="navbar-nav">
-                            <ul id="cust-menu">
-                                <li><a class="nav-item nav-link e" href="#core-values">Core Values</a></li>
-                                <li><a class="nav-item nav-link" href="#vision-mission">Vision and Mission</a></li>
-                                <li><a class="nav-item nav-link" href="#Partitions">Smart Partitions</a></li>
-                                <li><a class="nav-item nav-link disabled" href="#ceilings">Smart Ceilings</a></li>
-                                <li><a class="nav-item nav-link disabled" href="#exhibition">Smart Exhibition Stands</a></li>
-                          </ul>
-                            </div>
-                              </div>
-                            </div>
-
-                         </nav>
-                        <div class="spacer-single"></div>
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <div class="navbar-nav">
+                                    <ul id="cust-menu">
+                                        <li><a class="nav-item nav-link e" href="#core-values">Core Values</a></li>
+                                        <li><a class="nav-item nav-link" href="#vision-mission">Vision and Mission</a></li>
+                                        <li><a class="nav-item nav-link" href="#Partitions">Our Motto</a></li>
+                                        <li><a class="nav-item nav-link disabled" href="#ceilings">Smart Ceilings</a></li>
+                                        <li><a class="nav-item nav-link disabled" href="#exhibition">Smart Exhibition Stands</a></li>
+                                    </ul>
+                                </div>
+                        </div>
                     </div>
-                    <!-- Links -->
+
+                    </nav>
+                    <div class="spacer-single"></div>
+                </div>
+                <!-- Links -->
 
 
-                    <div class="col-md-12 wow fadeInLeft margin" id="core-values" style="padding-bottom: 50px;padding-top: 30px;">
-                        <h3><span class="id-color">Core</span> Values</h3>
-                      <div class="row">
-                          <div class="col-md-6">
-                          <p class="porfolio">We design SMART, We Fabricate QUALITY and Install EFFICIENTLY</p>
-                          </div>
+                <div class="col-md-12 wow fadeInLeft margin" id="core-values" style="padding-bottom: 50px;padding-top: 30px;">
+                    <h3><span class="id-color">Core</span> Values</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="porfolio">We design <span class="id-color">SMART</span></p><p class="porfolio"> We Fabricate <span class="id-color">QUALITY</span></p> <p class="porfolio">We install <span class="id-color">EFFICIENTLY</span></p>
+                        </div>
 
-                          <div class="col-md-6">
+                        <div class="col-md-6">
                             <a class="image-popup-no-margins" href="images/bg-6.jpg">
                                 <img src="images/gallery5.jpg" class="img-responsive" alt="">
                             </a>
-                          </div>
-                      </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-12 wow fadeInLeft margin" id="vision-mission" style="padding-bottom: 50px;padding-top: 30px;">
-                        <h3><span class="id-color">Vision </span>and Mission</h3>
-                      <div class="row">
-                          <div class="col-md-6">
-                          <p class="porfolio">Our Vision is to be the leading Contracting company stretching across the African Continent</p>
-                          <p class="porfolio"> Mission: To design innovative interior and exterior conceps for both cooperae and residential and Fabricae to mould these concepts into a masterpiece. Our dedication is to produce quality over quantity results</p>
-                          </div>
+                <div class="col-md-12 wow fadeInLeft margin" id="vision-mission" style="padding-bottom: 50px;padding-top: 30px;">
+                    <h3><span class="id-color">Vision </span>and Mission</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="porfolio"><span class="id-color">Our Vision</span> is to be the leading Contracting company stretching across the African Continent</p>
+                            <p class="porfolio"> <span class="id-color">Mission:</span> To design innovative interior and exterior conceps for both cooperae and residential and Fabricae to mould these concepts into a masterpiece. Our dedication is to produce quality over quantity results</p>
+                        </div>
 
-                          <div class="col-md-6">
+                        <div class="col-md-6">
                             <a class="image-popup-no-margins" href="images/bg-6.jpg">
                                 <img src="images/gallery2.jpg" class="img-responsive" alt="">
                             </a>
-                          </div>
-                      </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="col-md-12 wow fadeInLeft margin" id="Partitions" style="padding-bottom: 50px;padding-top: 30px;">
-                        <h3><span class="id-color">Smart</span> Partitions</h3>
-                      <div class="row">
-                          <div class="col-md-6">
-                          <p class="porfolio">Perfection, Stability and Efficiency is the key to our partition fabrication. We design specifically to suit our clients needs.</p>
-                          </div>
+                <div class="col-md-12 wow fadeInLeft margin" id="Partitions" style="padding-bottom: 50px;padding-top: 30px;">
+                    <h3><span class="id-color">Motto</span> </h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="porfolio">We pride ourselves on our creative edge whilst remainig true to balance,
+                            form and space. Line,form and tegral part of of any space.
+                            For this reason all properties are individual and deserve our full attention.</p>
+                        </div>
 
-                          <div class="col-md-6">
+                        <div class="col-md-6">
                             <a class="image-popup-no-margins" href="images/bg-6.jpg">
                                 <img src="images/gallery8.jpg" class="img-responsive" alt="">
                             </a>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
 
-                      <div class="col-md-12 wow fadeInLeft margin" id="ceilings" style="padding-bottom: 50px;padding-top: 30px;">
-                          <h3><span class="id-color">Smart</span> Ceilings</h3>
+                    <div class="col-md-12 wow fadeInLeft margin" id="ceilings" style="padding-bottom: 50px;padding-top: 30px;">
+                        <h3><span class="id-color">Smart</span> Ceilings</h3>
                         <div class="row">
                             <div class="col-md-6">
-                            <p class="porfolio">We design ceilings giving the perfect edge specifically to give your imagination the sense of reality/p>
+                                <p class="porfolio">We design ceilings giving the perfect edge specifically to give your imagination the sense of reality/p>
                             </div>
 
                             <div class="col-md-6">
-                              <a class="image-popup-no-margins" href="images/bg-6.jpg">
-                                  <img src="images/gallery6.jpg" class="img-responsive" alt="">
-                              </a>
+                                <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                                    <img src="images/gallery6.jpg" class="img-responsive" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-12 wow fadeInLeft margin" id="exhibition" style="padding-bottom: 50px;padding-top: 30px;">
                         <h3><span class="id-color">Exhibition</span>Stands</h3>
-                      <div class="row">
-                          <div class="col-md-6">
-                          <p class="porfolio">We fabricate stands to complement the brand as per our clients taste and preference. We pay attention to class finishes.</p>
-                          </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="porfolio">We fabricate stands to complement the brand as per our clients taste and preference. We pay attention to class finishes.</p>
+                            </div>
 
-                          <div class="col-md-6">
-                            <a class="image-popup-no-margins" href="images/bg-6.jpg">
-                                <img src="images/gallery7.jpg" class="img-responsive" alt="">
-                            </a>
-                          </div>
-                      </div>
-                    </div>
-        </section>
-        <!-- section close -->
-
-
-        <!--About-->
-        <section id="content-3-10" class="content-block data-section nopad content-3-10">
-            <div class="image-container col-sm-6 col-xs-12 pull-left">
-                <div class="background-image-holder">
-
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-6 col-xs-12 content">
-                        <div class="editContent">
-                            <h1>About Our Company</h1>
-                            <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+                            <div class="col-md-6">
+                                <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                                    <img src="images/gallery7.jpg" class="img-responsive" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="editContent">
-                            <p>Pentagon Interior is interior design with a difference….</p>
-                            <p> We pride ourselves on our creative edge whilst remaining true to balance, form and space. An old-fashioned work ethic, family values, professionalism and integrity that come from 30 years in the construction and interior design industry.</p>
-                        </div>
-                        <a href="#gallery" class="btn btn-outline btn-outline outline-dark">Our Gallery</a>
                     </div>
-                </div><!-- /.row-->
-            </div><!-- /.container -->
-        </section>
+    </section>
+    <!-- section close -->
 
 
+    <!--About-->
+    <section id="content-3-10" class="content-block data-section nopad content-3-10">
+        <div class="image-container col-sm-6 col-xs-12 pull-left">
+            <div class="background-image-holder">
 
-
-
-        <!-- section begin -->
-        <section id="view-all-projects" class="call-to-action bg-color text-center" data-speed="5" data-type="background" aria-label="view-all-projects">
-            <a href="#" class="btn btn-line-black btn-big">View All Projects</a>
-        </section>
-        <!-- logo carousel section close -->
-    </div>
-    <!-- footer begin -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div style="width: 100%; height: 300px;" id="map"></div>
-                    <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgWjyq3396nSbiVANvEddd38Nt07SW8qU&callback=initMap">
-                    </script>
-                    <br>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="widget widget_recent_post">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="history.php">Company History</a></li>
-                            <li><a href="services.php">Our services</a></li>
-                            <li><a href="#">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <h3>Contact Us</h3>
-                    <div class="widget widget-address">
-                        <address>
-                            <span><strong>Address:</strong>Road 1, Nationwide Godowns, Godown 7, Baba Dogo Rd, Nairobi</span>
-                            <span><strong>Phone:</strong>+254 737 525209</span>
-                            <span><strong>Email:</strong><a href="mailto:contact@archi-interior.com">contact@pentagoninterior.com</a></span>
-                            <span><strong>Web:</strong><a href="#">http://pentagoninterior.com</a></span>
-                        </address>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <a href="#" id="back-to-top"></a>
-    </footer>
-    <!-- footer close -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-6 col-xs-12 content">
+                    <div class="editContent">
+                        <h1>About Our Company</h1>
+                        <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+                    </div>
+                    <div class="editContent">
+                        <p>Pentagon Interior is interior design with a difference….</p>
+                        <p> We pride ourselves on our creative edge whilst remaining true to balance, form and space. An old-fashioned work ethic, family values, professionalism and integrity that come from 30 years in the construction and interior design industry.</p>
+                    </div>
+                    <a href="#gallery" class="btn btn-outline btn-outline outline-dark">Our Gallery</a>
+                </div>
+            </div><!-- /.row-->
+        </div><!-- /.container -->
+    </section>
+
+
+
+
+
+    <!-- section begin -->
+    <section id="view-all-projects" class="call-to-action bg-color text-center" data-speed="5" data-type="background" aria-label="view-all-projects">
+        <a href="#" class="btn btn-line-black btn-big">View All Projects</a>
+    </section>
+    <!-- logo carousel section close -->
+</div>
+<!-- footer begin -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div style="width: 100%; height: 300px;" id="map"></div>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgWjyq3396nSbiVANvEddd38Nt07SW8qU&callback=initMap">
+                </script>
+                <br>
+            </div>
+
+            <div class="col-md-4">
+                <div class="widget widget_recent_post">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="history.php">Company History</a></li>
+                        <li><a href="services.php">Our services</a></li>
+                        <li><a href="#">Clientele</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <div class="widget widget-address">
+                    <address>
+                        <span><strong>Address:</strong>Road 1, Nationwide Godowns, Godown 7, Baba Dogo Rd, Nairobi</span>
+                        <span><strong>Phone:</strong>+254 737 525209</span>
+                        <span><strong>Email:</strong><a href="mailto:contact@archi-interior.com">contact@pentagoninterior.com</a></span>
+                        <span><strong>Web:</strong><a href="#">http://pentagoninterior.com</a></span>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="back-to-top"></a>
+</footer>
+<!-- footer close -->
 </div>
 
 

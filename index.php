@@ -51,17 +51,18 @@
 
 <body id="homepage">
 
-<div id="wrapper">
+<div id="wrapper" style="background: #18191b">
 
     <!-- header begin -->
-    <header>
+    <header >
 
 
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <!-- logo begin -->
-                    <div id="logo">
+
+                    <div id="logo" class="logosize">
                         <a href="index.php">
                             <img class="logo" src="images/icon.PNG" alt="">
                         </a>
@@ -86,6 +87,7 @@
                             <li><a href="gallery.php">Gallery</a></li>
                             <li><a href="portfolio.php">Portfolio</a></li>
                             <li><a href="contact.php">Contact</a></li>
+                            <li><a href="help.php" >FAQs</a></li>
                         </ul>
                     </nav>
 
@@ -107,7 +109,7 @@
             <div id="homepagecontent">
                 <br><br><br><br><br><br>
                 <h3>our expertise for</h3>
-                <h2>interior &nbsp;</h2> <h2>design</h2><br>
+                <h2>interior design</h2><br>
                 <a href="portfolio.php">Our Portfolio</a>
             </div><br><br>
             <a href="#section-about" id="homepageimga"><img src="images/ui.totop.png" id="homepagecontentimg"></a>
@@ -373,7 +375,7 @@
                             <span><strong>Address:</strong>Road 1, Nationwide Godowns, Godown 7, Baba Dogo Rd, Nairobi</span>
                             <span><strong>Phone:</strong>+254 737 525209</span>
                             <span><strong>Email:</strong><a href="mailto:contact@archi-interior.com">contact@pentagoninterior.com</a></span>
-                            <span><strong>Web:</strong><a href="#">http://pentagoninterior.com</a></span>
+                            <span><strong>Web:</strong><a href="http://pentagoninterior.com">http://pentagoninterior.com</a></span>
                         </address>
                     </div>
                 </div>

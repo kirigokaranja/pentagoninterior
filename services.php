@@ -75,7 +75,7 @@
                     <nav>
                         <ul id="mainmenu">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="about.php" >About Us</a>
+                            <li><a href="about.php">About Us</a>
                                 <ul>
                                     <li><a href="history.php">Our History</a></li>
                                     <li><a href="services.php" class="active">Our Services</a></li>
@@ -83,9 +83,9 @@
                             </li>
                             <li><a href="clientele.php">Clientele</a></li>
                             <li><a href="gallery.php">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="help.php" >FAQs</a></li>
                         </ul>
                     </nav>
 
@@ -125,29 +125,29 @@
                     </div>
 
                     <div class="col-md-4 wow fadeInUp" data-wow-delay=".2s">
-                        <h3><span class="id-color">Office</span> Design</h3>
+                        <h3><span class="id-color">Smart </span> Partitions</h3>
 
                         <div class="spacer-single"></div>
-                        <a class="image-popup-no-margins" href="images/gallery7.jpg" title="Office space layout with a modern twist and aired rooms.">
+                        <a class="image-popup-no-margins" href="images/gallery7.jpg" title="Perfection, stability and efficiency is the key to our partition fabrication.">
                         <img src="images/gallery7.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInRight">
-                        <h3><span class="id-color">Commercial</span> Design</h3>
+                        <h3><span class="id-color">Exhibition</span> Stand</h3>
 
                         <div class="spacer-single"></div>
-                        <a class="image-popup-no-margins" href="images/gallery4.jpg" title=" shop layout with a showcase of the shop's merchandise.">
+                        <a class="image-popup-no-margins" href="images/gallery4.jpg" title=" We fabricate stands to complement the brand as per our clients taste and preference. We pay attention to class finishes.">
                         <img src="images/gallery4.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInLeft">
-                        <h3><span class="id-color">WallHanging</span> Design</h3>
+                        <h3><span class="id-color">Smart</span> Ceiling</h3>
 
                         <div class="spacer-single"></div>
-                        <a class="image-popup-no-margins" href="images/wallhanging.jpg" title="Modern home layout of the master bedroom layout.">
-                            <img src="images/wallhanging.jpg" class="img-responsive" alt="">
+                        <a class="image-popup-no-margins" href="images/ceiling.jpg" title="We design ceilings giving the perfect edge specifically to give your imagination the sense of reality.">
+                            <img src="images/ceiling.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
 

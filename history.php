@@ -75,7 +75,7 @@
                     <nav>
                         <ul id="mainmenu">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="about.php" >About Us</a>
+                            <li><a href="about.php">About Us</a>
                                 <ul>
                                     <li><a href="history.php" class="active">Our History</a></li>
                                     <li><a href="services.php">Our Services</a></li>
@@ -85,6 +85,7 @@
                             <li><a href="gallery.php">Gallery</a></li>
                             <li><a href="portfolio.php">Portfolio</a></li>
                             <li><a href="contact.php">Contact</a></li>
+                            <li><a href="help.php">FAQs</a></li>
                         </ul>
                     </nav>
 
