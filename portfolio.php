@@ -105,6 +105,7 @@
                             <li><a href="gallery.php">Gallery</a></li>
                             <li><a href="portfolio.php" class="active">Portfolio</a></li>
                             <li><a href="contact.php">Contact</a></li>
+                            <li><a href="help.php">FAQs</a></li>
                         </ul>
                     </nav>
 
@@ -161,7 +162,7 @@
                         <h3><span class="id-color">Core</span> Values</h3>
                       <div class="row">
                           <div class="col-md-6">
-                          <p class="porfolio">Courage means we are entrepreneurial and thus take risks, reach beyond boundaries and experiment</p>
+                          <p class="porfolio">We design SMART, We Fabricate QUALITY and Install EFFICIENTLY</p>
                           </div>
 
                           <div class="col-md-6">
@@ -176,7 +177,8 @@
                         <h3><span class="id-color">Vision </span>and Mission</h3>
                       <div class="row">
                           <div class="col-md-6">
-                          <p class="porfolio">Courage means we are entrepreneurial and thus take risks, reach beyond boundaries and experiment</p>
+                          <p class="porfolio">Our Vision is to be the leading Contracting company stretching across the African Continent</p>
+                          <p class="porfolio"> Mission: To design innovative interior and exterior conceps for both cooperae and residential and Fabricae to mould these concepts into a masterpiece. Our dedication is to produce quality over quantity results</p>
                           </div>
 
                           <div class="col-md-6">
@@ -191,7 +193,7 @@
                         <h3><span class="id-color">Smart</span> Partitions</h3>
                       <div class="row">
                           <div class="col-md-6">
-                          <p class="porfolio">Courage means we are entrepreneurial and thus take risks, reach beyond boundaries and experiment</p>
+                          <p class="porfolio">Perfection, Stability and Efficiency is the key to our partition fabrication. We design specifically to suit our clients needs.</p>
                           </div>
 
                           <div class="col-md-6">
@@ -205,7 +207,7 @@
                           <h3><span class="id-color">Smart</span> Ceilings</h3>
                         <div class="row">
                             <div class="col-md-6">
-                            <p class="porfolio">Courage means we are entrepreneurial and thus take risks, reach beyond boundaries and experiment</p>
+                            <p class="porfolio">We design ceilings giving the perfect edge specifically to give your imagination the sense of reality/p>
                             </div>
 
                             <div class="col-md-6">
@@ -220,7 +222,7 @@
                         <h3><span class="id-color">Exhibition</span>Stands</h3>
                       <div class="row">
                           <div class="col-md-6">
-                          <p class="porfolio">Courage means we are entrepreneurial and thus take risks, reach beyond boundaries and experiment</p>
+                          <p class="porfolio">We fabricate stands to complement the brand as per our clients taste and preference. We pay attention to class finishes.</p>
                           </div>
 
                           <div class="col-md-6">
