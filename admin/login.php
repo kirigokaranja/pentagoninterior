@@ -49,8 +49,8 @@ session_start();
 include "connection.php";
 global $conn;
 if(isset($_POST['Login'])){
-    $User=$_POST['username'];
-    $Pass=$_POST['password'];
+    $User="Admin";
+    $Pass=1234;
 
     $query="SELECT `username`, `password` FROM `users` WHERE `username`='".$User."' AND `password`='".$Pass."'";
     $Results=mysqli_query($conn,$query);

@@ -79,30 +79,46 @@
             </div>
         </div>
         <div id="mySidenav" class="sidenav">
+            <?php
+            include('connection.php');
+            $messages="SELECT * FROM `messages`";
+            $result_message=mysqli_query($conn,$messages);
+            $count=mysqli_num_rows($result_message);
+            ?>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
             <button class="dropdown-btn">Gallery
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
                 <a href="images.php">Add Image</a>
-                <a href="#">Manage Images</a>
+                <a href="managegallery.php">Manage Images</a>
             </div>
-            <a href="#">Clients</a>
+            <a href="manager.php">Add Designer</a>
             <button class="dropdown-btn" >Clientelle
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-container">
-                <a href="client.php" class="active">Add Client</a>
-                <a href="#">Manage Client</a>
+                <a href="index.php" class="active">Add Client</a>
+                <a href="manageclient.php">Manage Client</a>
             </div>
-            <a href="#">Contact</a>
+            <a href="Message.php">Messages <span class="badge" id="spaner"><?php if($count !== 0){
+                        echo $count ;
+                    }?></span></a>
         </div>
+        <style>
+            #spaner {
+                background-color: #FAA612;
+                color: black;
+                font-size: 16px;
+                margin-left: 5px;
+            }
+
+        </style>
     </header>
 </div>
 <div class="containerform" style="margin-top: -2%;">
     <h3>Add Image to Gallery</h3><br>
-    <form method="post" enctype="multipart/form-data" action="addgalleryimages.php">
+    <form method="post" enctype="multipart/form-data" action="actions/addgalleryimages.php">
 
         <label class="password">
             <input type="file" name="Upload" ><br>

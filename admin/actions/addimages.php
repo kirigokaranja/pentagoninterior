@@ -1,8 +1,8 @@
 <html>
 <head>
-    <script src="../dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
-    <style>body{background-image: url("../images/wide3.jpg")}</style>
+    <script src="../../dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../dist/sweetalert.css">
+    <style>body{background-image: url("../../images/wide3.jpg")}</style>
 
 </head>
 <body>
@@ -14,11 +14,11 @@
  * Time: 21:35
  */
 session_start();
-require('connection.php');
+require('../connection.php');
 $userid = $_SESSION['uid'];
 $images = $_FILES['file']['name'];
 
-$folder1 = "client/";
+$folder1 = "../client/";
 $images = $_FILES['file']['name'];
 move_uploaded_file($_FILES['file']['tmp_name'], "$folder1".$_FILES["file"]["name"]);
 
@@ -39,7 +39,7 @@ if ($result3){
             showConfirmButton: false
         });
         setTimeout(function () {
-            location.href = "client.php"
+            location.href = "../index.php"
         }, 1000);
     </script>
     <?php
@@ -54,7 +54,7 @@ if ($result3){
             showConfirmButton: false
         });
         setTimeout(function () {
-            location.href = "image.php"
+            location.href = "../image.php"
         }, 1000);
     </script>
     <?php

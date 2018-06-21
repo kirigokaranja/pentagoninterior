@@ -1,8 +1,8 @@
 <html>
 <head>
-    <script src="../dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
-    <style>body{background-image: url("../images/wide3.jpg")}</style>
+    <script src="../../dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../dist/sweetalert.css">
+    <style>body{background-image: url("../../images/wide3.jpg")}</style>
 
 </head>
 <body>
@@ -14,10 +14,10 @@
  * Time: 19:48
  */
 session_start();
-require('connection.php');
+require('../connection.php');
 $upload_images = $_FILES['myimage']['name'];
 
-$folder = "client/logo/";
+$folder = "../client/logo/";
 $client_name= $_POST['clientname'];
 $year = $_POST['year'];
 $challenge = $_POST['challenge'];
@@ -64,7 +64,7 @@ if ($res && $row = $res->fetch_assoc()) {
                 showConfirmButton: false
             });
             setTimeout(function () {
-                location.href = "image.php"
+                location.href = "../image.php"
             }, 1000);
         </script>
 <?php
@@ -79,7 +79,7 @@ if ($res && $row = $res->fetch_assoc()) {
                 showConfirmButton: false
             });
             setTimeout(function () {
-                location.href = "client.php"
+                location.href = "../index.php"
             }, 1000);
         </script>
         <?php

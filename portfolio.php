@@ -32,7 +32,7 @@
             text-align: center;
             padding-top: 40px;
             font-size: 20px;
-            line-height: 1.5 em;
+            line-height: 1.5em;
         }
     </style>
 
@@ -165,7 +165,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                            <a class="image-popup-no-margins" href="images/gallery5.jpg">
                                 <img src="images/gallery5.jpg" class="img-responsive" alt="">
                             </a>
                         </div>
@@ -181,7 +181,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                            <a class="image-popup-no-margins" href="images/gallery2.jpg">
                                 <img src="images/gallery2.jpg" class="img-responsive" alt="">
                             </a>
                         </div>
@@ -198,7 +198,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                            <a class="image-popup-no-margins" href="images/gallery8.jpg">
                                 <img src="images/gallery8.jpg" class="img-responsive" alt="">
                             </a>
                         </div>
@@ -212,7 +212,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                                <a class="image-popup-no-margins" href="images/gallery6.jpg">
                                     <img src="images/gallery6.jpg" class="img-responsive" alt="">
                                 </a>
                             </div>
@@ -227,7 +227,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                                <a class="image-popup-no-margins" href="images/gallery7.jpg">
                                     <img src="images/gallery7.jpg" class="img-responsive" alt="">
                                 </a>
                             </div>

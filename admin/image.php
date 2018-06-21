@@ -30,6 +30,7 @@
 
     <!-- color scheme -->
     <link rel="stylesheet" href="../css/color.css" type="text/css" id="colors">
+    <link rel="stylesheet" href="../css/sidebar.css" type="text/css">
 
     <!-- load fonts -->
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css" type="text/css">
@@ -68,21 +69,13 @@
                     <!-- mainmenu begin -->
                     <nav>
                         <ul id="mainmenu">
-                            <li><a href="index.php" >Dashboard</a></li>
-                            <li><a href="" class="active">Client</a>
-                                <ul>
-                                    <li><a href="client.php">Project Info</a></li>
-                                    <li><a href="images.php" class="active">Slideshow Info</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Clientele</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.php" class="active">Dashboard</a></li>
+                            <li><a href="#">Logout</a></li>
                         </ul>
                     </nav>
 
                 </div>
+
                 <!-- mainmenu close -->
 
             </div>
@@ -105,7 +98,7 @@ $username = $row['client_name'];
 </div>
 <div style="width: 45%;margin-left: 28%;margin-top: 15%">
 
-    <form action="addimages.php" method="post" enctype="multipart/form-data" class="dropzone" id="my-dropzone"
+    <form action="actions/addimages.php" method="post" enctype="multipart/form-data" class="dropzone" id="my-dropzone"
           style="min-height: 350px; border: dotted 2px black; color: black">
 <br>
         <div class="fallback" style="position: relative;color: black">
@@ -119,7 +112,42 @@ $username = $row['client_name'];
     </div>
 
 </div>
+<div id="mySidenav" class="sidenav">
+    <?php
+    include('connection.php');
+    $messages="SELECT * FROM `messages`";
+    $result_message=mysqli_query($conn,$messages);
+    $count=mysqli_num_rows($result_message);
+    ?>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button class="dropdown-btn">Gallery
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="images.php">Add Image</a>
+        <a href="managegallery.php">Manage Images</a>
+    </div>
+    <a href="manager.php">Add Designer</a>
+    <button class="dropdown-btn" >Clientelle
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="index.php" class="active">Add Client</a>
+        <a href="manageclient.php">Manage Client</a>
+    </div>
+    <a href="Message.php">Messages <span class="badge" id="spaner"><?php if($count !== 0){
+                echo $count ;
+            }?></span></a>
+</div>
+<style>
+    #spaner {
+        background-color: #FAA612;
+        color: black;
+        font-size: 16px;
+        margin-left: 5px;
+    }
 
+</style>
 
 <!-- Javascript Files
 ================================================== -->
@@ -140,6 +168,6 @@ $username = $row['client_name'];
 <script src="../js/jquery.magnific-popup.min.js"></script>
 <script src="../js/enquire.min.js"></script>
 <script src="../js/designesia.js"></script>
-
+<script src="../js/sidebar.js"></script>
 </body>
 </html>

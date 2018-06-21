@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="../css/new.css" type="text/css">
     <link rel="stylesheet" href="../css/sidebar.css" type="text/css">
 
-
+    <script src="../dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
     <!-- custom background -->
     <link rel="stylesheet" href="../css/bg.css" type="text/css">
 
@@ -39,11 +40,127 @@
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="../fonts/elegant_font/HTML_CSS/style.css" type="text/css">
     <link rel="stylesheet" href="../fonts/et-line-font/style.css" type="text/css">
-    <link rel="stylesheet" href="../css/login.css">
+    <style>
+        label {
+            font-size: 16px;
+        }
+
+        .texts {
+            margin-bottom: 20px;
+            background: none;
+            border: none;
+            line-height: 1em;
+            font-weight: 300;
+            padding: 0.125em 0.25em;
+            width: 320px;
+            border-bottom: 1px solid black;
+        }
+
+        .about-details {
+            /*                    margin-left: 280px;*/
+            margin-top: 40px;
+            border-top: 2px solid #fff;
+            transition: all .7s ease 0s;
+            -webkit-transition: all .7s ease 0s;
+            -moz-transition: all .7s ease 0s;
+            -o-transition: all .7s ease 0s;
+            -ms-transition: all .7s ease 0s;
+            transition: all, 0.3s;
+            box-shadow: 5px 4px 5px grey;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+
+        }
+
+    </style>
 
 <body id="homepage">
 
 <div id="wrapper">
+
+    <div id="content" class="no-bottom no-top">
+        <br>
+        <section id="section-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+                        <h1>Messages and Services</h1>
+                        <div class="separator"><span><i class="fa fa-circle"></i></span></div>
+                        <div class="spacer-single"></div>
+                    </div>
+                </div>
+
+                <center>
+                    <table>
+                        <tr>
+                            <th>Names</th>
+                            <th>Emailaddress</th>
+                            <th>Service</th>
+                            <th>Action</th>
+                        </tr>
+                        <?php
+                        include('connection.php');
+                        $sql5="SELECT * FROM `messages`";
+                        $data5=mysqli_query($conn,$sql5);
+                        while($tabledata5=mysqli_fetch_assoc($data5)){
+                            $Names=$tabledata5['Names'];
+                            $Email=$tabledata5['Email'];
+                            $ID5=$tabledata5['id'];
+                            $Message=$tabledata5['Message'];
+                            $service=$tabledata5['service'];
+                            echo"<tr>";
+                            echo"<td>{$Names}</td>";
+                            echo"<td>{$Email}</td>";
+                            echo"<td>{$service}</td>";
+                            echo"<td><a href='ViewMessage.php?id={$ID5}'><input type='button' class='btn22' value='View'></a></td>";
+                            echo"</tr>";
+                        } ?>
+                        <style>
+                            .table {
+                                border-collapse: collapse;
+                                width: 100%;
+                                overflow-x: auto;
+                                overflow-y: auto;
+                                height: 600px;
+                                margin-left: 15px;
+                            }
+
+                            th,
+                            td {
+                                text-align: left;
+                                padding: 8px;
+                                color: #18191b;
+                            }
+
+                            tr:nth-child(even) {
+                                background-color: #EEEDED;
+                            }
+
+                            tr:hover {
+                                background-color: #FAA612;
+                                color: white;
+                                cursor: pointer;
+                            }
+
+                            th {
+                                background-color: black;
+                                color: white;
+                            }
+
+                        </style>
+                    </table>
+                </center>
+
+            </div>
+
+        </section>
+    </div>
+
 
     <!-- header begin -->
     <header>
@@ -80,7 +197,6 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <?php
-            include('connection.php');
             $messages="SELECT * FROM `messages`";
             $result_message=mysqli_query($conn,$messages);
             $count=mysqli_num_rows($result_message);
@@ -117,37 +233,6 @@
     </header>
 </div>
 <div class="containerform">
-    <img src='' width=200px; height=100px; id="output_image" class='image' style=" width:100px; margin-left: 35%; background-color: white" alt="Logo Image">
-    <form method="post" action="actions/addclient.php" enctype="multipart/form-data">
-
-        <label class="password">
-            <input type="file" name="myimage"  onchange="preview_image(event)"><br>
-        </label>
-        <label class="password">
-            <span class="label-text">Client Name</span>
-            <input type="text" name="clientname"required/>
-        </label>
-        <label class="password">
-            <span class="label-text">Year</span>
-            <input type="text" name="year" required/>
-        </label>
-        <label class="password">
-            <span class="label-text">Challenge</span>
-            <textarea  name="challenge" required style="background: transparent;border: none"></textarea>
-        </label>
-        <label class="password">
-            <span class="label-text">Solution</span>
-            <textarea  name="solution" required style="background: transparent;border: none"></textarea>
-        </label>
-        <label class="password">
-            <span class="label-text">Outcome</span>
-            <textarea  name="outcome" required style="background: transparent;border: none"></textarea>
-        </label>
-
-        <div class="text-center">
-            <button type="submit" class="submit">SAVE CHANGES</button>
-        </div>
-    </form>
 
 
 

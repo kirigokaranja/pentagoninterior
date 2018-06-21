@@ -1,16 +1,16 @@
 <html>
 <head>
-    <script src="../dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
-    <style>body{background-image: url("../images/wide3.jpg")}</style>
+    <script src="../../dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../dist/sweetalert.css">
+    <style>body{background-image: url("../../images/wide3.jpg")}</style>
 
 </head>
 <body>
 <?php
-include('connection.php');
+include('../connection.php');
 global $conn;
     $Des = $_POST['description'];
-    $target_dir = "Uploads/";
+    $target_dir = "../Uploads/";
 
     $target_file = $target_dir . basename($_FILES["Upload"]["name"]);
     $FileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -29,7 +29,7 @@ global $conn;
                 showConfirmButton: false
             });
             setTimeout(function () {
-                location.href = "client.php"
+                location.href = "../index.php"
             }, 1000);
         </script>
         <?php
@@ -44,7 +44,7 @@ global $conn;
         showConfirmButton: false
     });
     setTimeout(function () {
-        location.href = "images.php"
+        location.href = "../images.php"
     }, 1000);
 </script>
 <?php

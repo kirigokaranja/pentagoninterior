@@ -104,7 +104,7 @@
 
 
     <!-- content begin -->
-    <div id="content" class="no-bottom no-top">
+    <div id="content" class="no-bottom no-top" style="height: 100vh;">
         <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp" style="margin-top: 9%; visibility: visible">
             <h1>Our Clientele</h1>
             <div class="separator"><span><i class="fa fa-circle"></i></span></div>
