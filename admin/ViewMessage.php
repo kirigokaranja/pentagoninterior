@@ -32,6 +32,8 @@
     <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
     <!-- custom background -->
     <link rel="stylesheet" href="../css/bg.css" type="text/css">
+    <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/book1.css">
 
     <!-- color scheme -->
     <link rel="stylesheet" href="../css/color.css" type="text/css" id="colors">
@@ -96,9 +98,6 @@
                 </div>
                 <center>
                     <div class="newcontainer">
-                        <div class="row header">
-                            <h3></h3>
-                        </div>
                         <?php
                         include('connection.php');
                         if (isset($_GET['id'])){
@@ -113,31 +112,40 @@
                             $Message=$fetch['Message'];
                         }
                         ?>
-                        <div class="row body">
+                        <div class="row body" style="width: 40%;">
                             <form method="post" action="">
-                                <ul>
-                                    <p class="old">
-                                        <br>
-                                        <label for="first_name">Names:</label>
-                                        <input class="texts" type="text" name="username" placeholder="" value="<?php echo $name;?>"/><br>
-                                    </p>
-                                    <p class="new">
-                                        <label for="last_name"> Email Address:  </label>
-                                        <input class="texts" type="email" name="email" placeholder="" value="<?php echo $Email;?>"/><br>
-                                    </p>
-                                    <p class="old">
-                                        <br>
-                                        <label for="first_name">Requested Service:</label>
-                                        <input class="texts" type="text" name="username" placeholder="" value="<?php echo $service;?>"/><br>
-                                    </p>
-                                    <p class="old">
-                                        <br>
-                                        <label for="first_name">Message:</label>
-                                        <input class="texts" type="text" name="username" placeholder="" value="<?php echo $Message;?>"/><br>
-                                    </p>
-                                </ul>
+
+                                 <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none" title="">
+          <input class="input__field input__field--hoshi" type="text" id="first_name" name="first_name" readonly  value="<?php echo $name;?>" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="first_name">
+            <span class="input__label-content input__label-content--hoshi">Full Name</span>
+          </label>
+        </span>
+
+                                <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none" title="">
+          <input class="input__field input__field--hoshi" type="text" id="first_name" name="first_name" readonly  value="<?php echo $Email;?>" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="first_name">
+            <span class="input__label-content input__label-content--hoshi">Email Address</span>
+          </label>
+        </span>
+
+                                <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none" title="">
+          <input class="input__field input__field--hoshi" type="text" id="first_name" name="first_name" readonly  value="<?php echo $service;?>" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="first_name">
+            <span class="input__label-content input__label-content--hoshi">Requested Service:</span>
+          </label>
+        </span>
+                                <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none" title="">
+          <input class="input__field input__field--hoshi" type="text" id="first_name" name="first_name" readonly  value="<?php echo $Message;?>" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="first_name">
+            <span class="input__label-content input__label-content--hoshi">Message</span>
+          </label>
+        </span>
                             </form>
-                            <hr>
                             <h4>Response</h4>
                             <input type="button" value="accept" name="accepted" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
                             <input type="button" value="reject" name="rejected" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
@@ -160,25 +168,39 @@
                         </div>
                         <div class="modal-body">
                             <form method="post" action="#">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1" style="color: #18191b">Choose Designer for this Job </label>
-                                    <select class="forms6" name="Designers" style="color: #18191b">
-                                        <?php
-                                        $designers="SELECT * FROM `designers`";
-                                        $run=mysqli_query($conn,$designers);
-                                        while($fetch_designers=mysqli_fetch_assoc($run)){
-                                            $DesignerEmail=$fetch_designers['Email'];
-                                            $DesignerName=$fetch_designers['Names'];
-                                            echo "<option value='$DesignerEmail'>$DesignerEmail</option>";
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1" style="color: #18191b">Enter message for the designer</label>
-                                    <textarea class="form-control" id="exampleInputReason" name="DesignerMessage" required></textarea>
-                                </div>
-                                <button class="btn colors btn-block" name="Foward">Foward Project</button>
+                                     <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none">
+                                         <?php
+                                         $sql=mysqli_query($conn, "SELECT * FROM designers" );
+                                         if(mysqli_num_rows($sql)){
+
+                                             ?>
+                                             <select name="Designers"  class="input__field input__field--hoshi" id="genre"  required style="font-size:large; outline:none">
+                                                 <?php
+                                                 while($rs=mysqli_fetch_array($sql)){
+                                                 ?>
+                                                 <option value="<?php echo $rs['Email']; ?>"><?php echo $rs['Email'];} ?></option></select>
+                                             <?php
+
+                                         }
+
+                                         ?>
+                                         <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="genre" >
+            <span class="input__label-content input__label-content--hoshi">Choose Designer for this Job</span>
+          </label>
+        </span>
+
+                                <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none" title="">
+                                    <textarea class="input__field input__field--hoshi" type="text" id="comments" cols="46" rows="3" name="DesignerMessage" required ></textarea>
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="comments">
+            <span class="input__label-content input__label-content--hoshi">Enter message for the designer</span>
+          </label>
+        </span>
+                                <div class="cta" style="margin-left: 30%">
+                                    <button class="btn btn-primary pull-left" name="Foward">
+                                        Foward Project
+                                    </button></div>
                                 <?php
                                 if(isset($_POST['Foward'])){
                                     $designing=$_POST['Designers'];
@@ -258,11 +280,19 @@
                         </div>
                         <div class="modal-body">
                             <form method="post" action="#">
-                                <div class="form-group">
-                                    <label for="exampleInputReason" style="color: #18191b">Enter Reason for rejecting this application</label>
-                                    <textarea class="form-control" id="exampleInputReason" name="Reason" required></textarea>
-                                </div>
-                                <button class="btn colors btn-block" name="Confirm">Confirm</button>
+
+                                 <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none" title="">
+                                    <textarea class="input__field input__field--hoshi" type="text" id="comments" cols="46" rows="3" name="Reason" required ></textarea>
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="comments">
+            <span class="input__label-content input__label-content--hoshi">Enter Reason for rejecting this application</span>
+          </label>
+        </span>
+                                <div class="cta" style="margin-left: 30%">
+                                    <button class="btn btn-primary pull-left" name="Confirm">
+                                        Confirm
+                                    </button></div>
+
                                 <?php
                                 if(isset($_POST['Confirm'])){
                                     $Reason=$_POST['Reason'];
@@ -340,7 +370,7 @@
                     <nav>
                         <ul id="mainmenu">
                             <li><a href="index.php" class="active">Dashboard</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="Logout.php">Logout</a></li>
                             <li><a ><span style="font-size:30px;cursor: pointer" onclick="openNav()">&#9776;</span></a></li>
                         </ul>
                     </nav>

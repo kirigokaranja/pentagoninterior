@@ -54,6 +54,7 @@
             background-color: #18191b;
             width: 30%;
             margin-left: 5px;
+            margin-top: 60px;
             height: 100%;
         }
         .sidetab button {
@@ -150,7 +151,7 @@
 
 
             <div class="sidetab">
-                <button class="sidetablinks" id="open" onclick="openTab(event, 'homepage')">What we Do</button>
+                <button class="sidetablinks" onclick="openTab(event, 'homepaged')">What we Do</button>
                 <button class="sidetablinks" onclick="openTab(event, 'feedbackd')">Feedback Duration</button>
                 <button class="sidetablinks" onclick="openTab(event, 'aboutus')">About Us</button>
                 <button class="sidetablinks" onclick="openTab(event, 'clientelle')">Clientelle</button>
@@ -160,7 +161,7 @@
             </div>
 
 
-            <section id="homepage" style="margin-top: 10%; " class="sidetabcotent">
+            <section id="homepaged" style="margin-top: 10%; " class="sidetabcotent">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="text-center col-md-6-12 content">

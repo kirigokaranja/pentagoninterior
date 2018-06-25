@@ -130,7 +130,7 @@
                         <h3><span class="id-color">Residential</span> Design</h3>
                         Modern home layout of the master bedroom layout.
                         <div class="spacer-single"></div>
-                        <a class="image-popup-no-margins" href="images/bg-6.jpg">
+                        <a class="image-popup-no-margins" href="images/services1.jpg">
                             <img src="images/services1.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
@@ -139,14 +139,18 @@
                         <h3><span class="id-color">Office</span> Design</h3>
                         Office space layout with a modern twist and aired rooms.
                         <div class="spacer-single"></div>
-                        <img src="images/gallery7.jpg" class="img-responsive" alt="">
+                        <a class="image-popup-no-margins" href="images/gallery7.jpg">
+                            <img src="images/gallery7.jpg" class="img-responsive" alt="">
+                        </a>
                     </div>
 
                     <div class="col-md-4 wow fadeInRight">
                         <h3><span class="id-color">Commercial</span> Design</h3>
                         shop layout with a showcase of the shop's merchandise.
                         <div class="spacer-single"></div>
-                        <img src="images/gallery4.jpg" class="img-responsive" alt="">
+                        <a class="image-popup-no-margins" href="images/gallery4.jpg">
+                            <img src="images/gallery4.jpg" class="img-responsive" alt="">
+                        </a>
                     </div>
 
                 </div>
@@ -203,7 +207,6 @@
                 <!-- gallery item -->
                 <div class="item residential">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Floor Space</span>
@@ -218,7 +221,6 @@
                 <!-- gallery item -->
                 <div class="item hospitaly">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Modern Lighting</span>
@@ -234,7 +236,6 @@
                 <!-- gallery item -->
                 <div class="item hospitaly">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Wall Arrangement</span>
@@ -250,7 +251,6 @@
                 <!-- gallery item -->
                 <div class="item residential">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Showcase Design</span>
@@ -265,7 +265,6 @@
                 <!-- gallery item -->
                 <div class="item office">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Office Walls</span>
@@ -280,7 +279,6 @@
                 <!-- gallery item -->
                 <div class="item commercial">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Livingroom Arrangement</span>
@@ -295,7 +293,6 @@
                 <!-- gallery item -->
                 <div class="item residential">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Office Layout</span>
@@ -311,7 +308,6 @@
                 <!-- gallery item -->
                 <div class="item office">
                     <div class="picframe">
-                        <a class="simple-ajax-popup-align-top" href="#">
                                 <span class="overlay">
                                     <span class="pf_text">
                                         <span class="project-name">Showroom Arrangement</span>

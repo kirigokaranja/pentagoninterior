@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(empty($_SESSION['username'])){
+    ?>
+    <script type="text/javascript">
+        window.location.href = 'Login.php';
+    </script>
+    <?php
+}else{
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,7 +79,7 @@
                     <nav>
                         <ul id="mainmenu">
                             <li><a href="index.php" class="active">Dashboard</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="Logout.php">Logout</a></li>
                             <li><a ><span style="font-size:30px;cursor: pointer" onclick="openNav()">&#9776;</span></a></li>
                         </ul>
                     </nav>
@@ -94,13 +105,7 @@
                 <a href="managegallery.php">Manage Images</a>
             </div>
             <a href="manager.php">Add Designer</a>
-            <button class="dropdown-btn" >Clientelle
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="index.php" class="active">Add Client</a>
-                <a href="manageclient.php">Manage Client</a>
-            </div>
+            <a href="index.php" class="active">Add Client</a>
             <a href="Message.php">Messages <span class="badge" id="spaner"><?php if($count !== 0){
                         echo $count ;
                     }?></span></a>
@@ -161,3 +166,4 @@
 
 </body>
 </html>
+<?php }?>

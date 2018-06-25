@@ -49,17 +49,17 @@ session_start();
 include "connection.php";
 global $conn;
 if(isset($_POST['Login'])){
-    $User="Admin";
-    $Pass=1234;
+    $User=$_POST['username'];
+    $Pass=$_POST['password'];
 
     $query="SELECT `username`, `password` FROM `users` WHERE `username`='".$User."' AND `password`='".$Pass."'";
     $Results=mysqli_query($conn,$query);
     $counter= mysqli_num_rows($Results);
     if($counter > 0){
+        $_SESSION['username']=$User;
         ?>
         <script type="text/javascript">
             window.location.href = 'index.php';
-
         </script>
         <?php
     }else{

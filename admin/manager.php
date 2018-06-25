@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(empty($_SESSION['username'])){
+    ?>
+    <script type="text/javascript">
+        window.location.href = 'Login.php';
+    </script>
+    <?php
+}else{
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +43,8 @@
     <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
     <!-- custom background -->
     <link rel="stylesheet" href="../css/bg.css" type="text/css">
+    <link rel="stylesheet" href="../css/book.css">
+    <link rel="stylesheet" href="../css/book1.css">
 
     <!-- color scheme -->
     <link rel="stylesheet" href="../css/color.css" type="text/css" id="colors">
@@ -40,44 +53,6 @@
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="../fonts/elegant_font/HTML_CSS/style.css" type="text/css">
     <link rel="stylesheet" href="../fonts/et-line-font/style.css" type="text/css">
-    <style>
-        label {
-            font-size: 16px;
-        }
-
-        .texts {
-            margin-bottom: 20px;
-            background: none;
-            border: none;
-            line-height: 1em;
-            font-weight: 300;
-            padding: 0.125em 0.25em;
-            width: 320px;
-            border-bottom: 1px solid black;
-        }
-
-        .about-details {
-            /*                    margin-left: 280px;*/
-            margin-top: 40px;
-            border-top: 2px solid #fff;
-            transition: all .7s ease 0s;
-            -webkit-transition: all .7s ease 0s;
-            -moz-transition: all .7s ease 0s;
-            -o-transition: all .7s ease 0s;
-            -ms-transition: all .7s ease 0s;
-            transition: all, 0.3s;
-            box-shadow: 5px 4px 5px grey;
-            vertical-align: middle;
-            -webkit-transform: perspective(1px) translateZ(0);
-            transform: perspective(1px) translateZ(0);
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-            -webkit-transition-property: transform;
-            transition-property: transform;
-
-        }
-
-    </style>
 
 <body id="homepage">
 
@@ -96,29 +71,31 @@
                 </div>
                 <center>
                     <div class="newcontainer">
-                        <div class="row header">
-                            <h3></h3>
-                        </div>
-                        <div class="row body">
+
+                        <div class="row body" style="width: 40%;">
                             <form method="post" action="actions/addmanager.php">
-                                <ul>
 
+                 <span class="input input--hoshi">
+                                    <input type="text" readonly style="border: none" title="">
+                          <input class="input__field input__field--hoshi" type="text" id="username" name="username" required  />
+                          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="username">
+                            <span class="input__label-content input__label-content--hoshi">New Designer UserName</span>
+                          </label>
+                        </span>
 
-                                    <p class="old">
-                                        <br>
-                                        <label for="first_name">New Designer UserName:</label>
-                                        <input class="texts" type="text" name="username" placeholder="" required/><br>
-                                    </p>
-                                    <p class="new">
-                                        <label for="last_name">New Designer Email:  </label>
-                                        <input class="texts" type="email" name="email" placeholder="" required/><br>
-                                    </p>
+                                                <span class="input input--hoshi">
+                                    <input type="email" readonly style="border: none" title="">
+                          <input class="input__field input__field--hoshi" type="text" id="email" name="email" required  />
+                          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="email">
+                            <span class="input__label-content input__label-content--hoshi">New Designer Email Address</span>
+                          </label>
+                        </span>
 
-                                    <li>
-                                        <input class="btn btn-submit" type="submit" name="submit" value="Add Designer" />
-                                    </li>
+                                <div class="cta" style="margin-left: 30%">
+                                    <button class="btn btn-primary pull-left" name="submit">
+                                        Add Designer
+                                    </button></div>
 
-                                </ul>
                             </form>
                         </div>
                     </div>
@@ -152,7 +129,7 @@
                     <nav>
                         <ul id="mainmenu">
                             <li><a href="index.php" class="active">Dashboard</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="Logout.php">Logout</a></li>
                             <li><a ><span style="font-size:30px;cursor: pointer" onclick="openNav()">&#9776;</span></a></li>
                         </ul>
                     </nav>
@@ -178,13 +155,7 @@
                 <a href="managegallery.php">Manage Images</a>
             </div>
             <a href="manager.php">Add Designer</a>
-            <button class="dropdown-btn" >Clientelle
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="index.php" class="active">Add Client</a>
-                <a href="manageclient.php">Manage Client</a>
-            </div>
+            <a href="index.php" class="active">Add Client</a>
             <a href="Message.php">Messages <span class="badge" id="spaner"><?php if($count !== 0){
                         echo $count ;
                     }?></span></a>
@@ -243,3 +214,4 @@
 </script>
 </body>
 </html>
+<?php }?>

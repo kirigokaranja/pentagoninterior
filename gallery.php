@@ -111,115 +111,115 @@
 
             <div id="gallery" class="gallery full-gallery de-gallery pf_full_width wow fadeInUp" data-wow-delay=".3s">
 
-<!--                <!-- gallery item -->-->
-<!--                <div class="item residential">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Floor Space</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!--                        <img src="images/gallery2.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
-<!--                <div class="item hospitaly">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Modern Lighting</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!---->
-<!--                        <img src="images/gallery1.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
-<!--                <div class="item hospitaly">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Wall Arrangement</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!---->
-<!--                        <img src="images/gallery3.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
-<!--                <div class="item residential">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Showcase Design</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!--                        <img src="images/gallery4.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
-<!--                <div class="item">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Office Walls</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!--                        <img src="images/gallery5.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
-<!--                <div class="item">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Livingroom Arrangement</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!--                        <img src="images/gallery6.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
-<!--                <div class="item ">-->
-<!--                    <div class="picframe">-->
-<!--                        <a class="simple-ajax-popup-align-top" href="#">-->
-<!--                                <span class="overlay">-->
-<!--                                    <span class="pf_text">-->
-<!--                                        <span class="project-name">Office Layout</span>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                        </a>-->
-<!---->
-<!--                        <img src="images/gallery7.jpg" alt="" />-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <!-- close gallery item -->-->
-<!---->
-<!--                <!-- gallery item -->-->
+                <!-- gallery item -->
+                <div class="item residential">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Floor Space</span>
+                                    </span>
+                                </span>
+                        </a>
+                        <img src="images/gallery2.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="item hospitaly">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Modern Lighting</span>
+                                    </span>
+                                </span>
+                        </a>
+
+                        <img src="images/gallery1.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="item hospitaly">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Wall Arrangement</span>
+                                    </span>
+                                </span>
+                        </a>
+
+                        <img src="images/gallery3.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="item residential">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Showcase Design</span>
+                                    </span>
+                                </span>
+                        </a>
+                        <img src="images/gallery4.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Office Walls</span>
+                                    </span>
+                                </span>
+                        </a>
+                        <img src="images/gallery5.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="item">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Livingroom Arrangement</span>
+                                    </span>
+                                </span>
+                        </a>
+                        <img src="images/gallery6.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
+                <div class="item ">
+                    <div class="picframe">
+                        <a class="simple-ajax-popup-align-top" href="#">
+                                <span class="overlay">
+                                    <span class="pf_text">
+                                        <span class="project-name">Office Layout</span>
+                                    </span>
+                                </span>
+                        </a>
+
+                        <img src="images/gallery7.jpg" alt="" />
+                    </div>
+                </div>
+                <!-- close gallery item -->
+
+                <!-- gallery item -->
                 <?php
                 include('admin/connection.php');
                 global $conn;
